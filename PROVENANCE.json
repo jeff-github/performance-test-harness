@@ -1,0 +1,10 @@
+{
+  "edition": "Curated copy with sanitized defaults and new documentation",
+  "files": [
+    {
+      "source_name": "k6_diary_api_load_production_v2.js",
+      "destination": "load-test.js",
+      "original_sha256": "2caf253e5cb14e05d3de5155119785e6c788df862428fcaa51d385cdca0aa642"
+    }
+  ]
+}

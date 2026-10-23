@@ -1,0 +1,14 @@
+name: Source validation
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax
+        run: find . -name '*.js' -not -path './node_modules/*' -print0 | xargs -0 -n 1 node --check

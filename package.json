@@ -1,0 +1,5 @@
+{
+  "name": "performance-test-harness",
+  "private": true,
+  "type": "module"
+}
